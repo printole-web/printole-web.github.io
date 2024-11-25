@@ -9,21 +9,29 @@
 
         <title>Printole</title>
 
-        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="shortcut icon" href="/favicon.ico" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-		<meta name="apple-mobile-web-app-title" content="Printole" />
-		<link rel="manifest" href="/site.webmanifest" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0da6e7">
 
+        <meta name="msapplication-TileColor" content="#2d89ef">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Fonts -->
+        <!-- <link rel="stylesheet" href="./fonts/inter.css"> -->
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 
         <link href="./main.css" rel="stylesheet" />
         <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     </head>
 
-    <body x-data="{ aside: false }" class="antialiased text-gray-800 bg-white">
+    <body class="antialiased text-gray-800 bg-white">
 
-        <header class="relative w-full flex-none">
+        <header x-data="{ aside: false }" class="relative w-full flex-none">
             
 			<!-- TOP NAVBAR -->
 
@@ -39,6 +47,7 @@
 									style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2" 
 									viewBox="0 0 680 250">
 									<path d="M48.634 119.604h5.4v3.5h.1c.8-1.5 1.916-2.575 3.35-3.225 1.433-.65 2.983-.975 4.65-.975 2.033 0 3.808.358 5.325 1.075 1.516.716 2.775 1.7 3.775 2.95 1 1.25 1.75 2.708 2.25 4.375.5 1.666.75 3.45.75 5.35a18.93 18.93 0 0 1-.675 5.05c-.45 1.633-1.134 3.075-2.05 4.325a10.251 10.251 0 0 1-3.475 3c-1.4.75-3.05 1.125-4.95 1.125-.834 0-1.667-.075-2.5-.225a10.79 10.79 0 0 1-2.4-.725 9.506 9.506 0 0 1-2.125-1.275 7.068 7.068 0 0 1-1.625-1.825h-.1v12.9h-5.7v-35.4Zm19.9 12.95c0-1.167-.15-2.3-.45-3.4-.3-1.1-.75-2.075-1.35-2.925a6.963 6.963 0 0 0-2.25-2.05c-.9-.517-1.934-.775-3.1-.775-2.4 0-4.209.833-5.425 2.5-1.217 1.666-1.825 3.883-1.825 6.65 0 1.3.158 2.508.475 3.625.316 1.116.791 2.075 1.425 2.875a7.11 7.11 0 0 0 2.275 1.9c.883.466 1.908.7 3.075.7 1.3 0 2.4-.267 3.3-.8a6.992 6.992 0 0 0 2.225-2.075c.583-.85 1-1.817 1.25-2.9.25-1.084.375-2.192.375-3.325ZM79.034 119.604h5.35v5h.1c.166-.7.491-1.384.975-2.05a9.467 9.467 0 0 1 1.75-1.825 8.817 8.817 0 0 1 2.275-1.325 6.795 6.795 0 0 1 2.55-.5c.666 0 1.125.016 1.375.05l.775.1v5.5c-.4-.067-.809-.125-1.225-.175-.417-.05-.825-.075-1.225-.075a6.54 6.54 0 0 0-2.725.575c-.85.383-1.592.95-2.225 1.7-.634.75-1.134 1.675-1.5 2.775-.367 1.1-.55 2.366-.55 3.8v12.3h-5.7v-25.85ZM96.784 109.754h5.7v5.4h-5.7v-5.4Zm0 9.85h5.7v25.85h-5.7v-25.85ZM108.684 119.604h5.4v3.8l.1.1c.866-1.434 2-2.559 3.4-3.375 1.4-.817 2.95-1.225 4.65-1.225 2.833 0 5.066.733 6.7 2.2 1.633 1.466 2.45 3.666 2.45 6.6v17.75h-5.7v-16.25c-.067-2.034-.5-3.509-1.3-4.425-.8-.917-2.05-1.375-3.75-1.375-.967 0-1.834.175-2.6.525a5.628 5.628 0 0 0-1.95 1.45 6.79 6.79 0 0 0-1.25 2.175 7.76 7.76 0 0 0-.45 2.65v15.25h-5.7v-25.85ZM134.784 119.604h4.3v-7.75h5.7v7.75h5.15v4.25h-5.15v13.8c0 .6.025 1.116.075 1.55.05.433.166.8.35 1.1.183.3.458.525.825.675.366.15.866.225 1.5.225.4 0 .8-.009 1.2-.025.4-.017.8-.075 1.2-.175v4.4c-.634.066-1.25.133-1.85.2-.6.066-1.217.1-1.85.1-1.5 0-2.709-.142-3.625-.425-.917-.284-1.634-.7-2.15-1.25-.517-.55-.867-1.242-1.05-2.075-.184-.834-.292-1.784-.325-2.85v-15.25h-4.3v-4.25Z" style="fill-rule:nonzero" transform="translate(-152.736 -342.404) scale(3.56175)"/>
+									<path d="M615.45 479.438c-23.021 0-40.737-6.508-53.146-19.524-12.41-13.017-18.615-29.334-18.615-48.953 0-16.6 4.047-34.238 12.14-52.914 8.093-18.675 18.974-36.219 32.643-52.63 13.669-16.412 28.776-29.711 45.322-39.898 16.547-10.187 33.093-15.28 49.639-15.28 9.353 0 18.255 2.547 26.708 7.64s12.68 15.186 12.68 30.277c0 14.337-3.957 27.73-11.87 40.181-7.914 12.45-18.525 23.58-31.834 33.389-13.309 9.809-27.967 17.827-43.974 24.052-16.006 6.225-32.103 10.281-48.29 12.167a38.198 38.198 0 0 0-.809 4.81c-.18 1.698-.27 4.433-.27 8.206 0 1.887.27 5.188.809 9.904.54 4.716 2.069 9.715 4.587 14.997s6.654 9.809 12.409 13.582c5.756 3.773 13.669 5.659 23.741 5.659 15.107 0 30.305-4.433 45.592-13.299 15.287-8.866 29.675-20.656 43.164-35.37 13.489-14.714 24.73-31.126 33.722-49.235l10.792 9.054c-9.712 22.637-22.212 42.445-37.499 59.422-15.288 16.978-32.194 30.183-50.719 39.615-18.524 9.432-37.498 14.148-56.922 14.148Zm-22.662-102.432c9.353-1.132 19.784-4.527 31.294-10.187 11.511-5.659 22.572-12.827 33.183-21.505 10.611-8.677 19.334-18.204 26.168-28.579 6.835-10.375 10.252-20.845 10.252-31.409 0-4.15-.72-6.979-2.158-8.488-1.439-1.51-3.777-2.264-7.015-2.264-8.273 0-16.906 3.112-25.898 9.338-8.993 6.225-17.805 14.336-26.438 24.334s-16.367 21.034-23.201 33.107-12.23 23.957-16.187 35.653Zm115.465-159.59c-4.676-1.887-8.004-4.999-9.982-9.338-1.978-4.339-2.967-7.451-2.967-9.338 0-3.018 1.798-8.017 5.395-14.997 3.597-6.98 8.273-14.337 14.028-22.071 5.756-7.734 11.781-14.337 18.076-19.807 6.294-5.471 12.319-8.206 18.075-8.206 3.956 0 7.463 1.415 10.521 4.244 3.057 2.83 4.946 8.018 5.665 15.563a10080.96 10080.96 0 0 1-33.182 33.673c-9.533 9.62-18.075 19.713-25.629 30.277Z" style="fill-rule:nonzero;stroke:#000;stroke-width:2.28px" transform="matrix(.43934 0 0 .43934 322.514 -46.847)"/>
 									<path d="M615.45,479.438C592.429,479.438 574.713,472.93 562.304,459.914C549.894,446.897 543.689,430.58 543.689,410.961C543.689,394.361 547.736,376.723 555.829,358.047C563.922,339.372 574.803,321.828 588.472,305.417C602.141,289.005 617.248,275.706 633.794,265.519C650.341,255.332 666.887,250.239 683.433,250.239C692.786,250.239 701.688,252.786 710.141,257.879C718.594,262.972 722.821,273.065 722.821,288.156C722.821,302.493 718.864,315.886 710.951,328.337C703.037,340.787 692.426,351.917 679.117,361.726C665.808,371.535 651.15,379.553 635.143,385.778C619.137,392.003 603.04,396.059 586.853,397.945C586.494,399.454 586.224,401.058 586.044,402.755C585.864,404.453 585.774,407.188 585.774,410.961C585.774,412.848 586.044,416.149 586.583,420.865C587.123,425.581 588.652,430.58 591.17,435.862C593.688,441.144 597.824,445.671 603.579,449.444C609.335,453.217 617.248,455.103 627.32,455.103C642.427,455.103 657.625,450.67 672.912,441.804C688.199,432.938 702.587,421.148 716.076,406.434C729.565,391.72 740.806,375.308 749.798,357.199L760.59,366.253C750.878,388.89 738.378,408.698 723.091,425.675C707.803,442.653 690.897,455.858 672.372,465.29C653.848,474.722 634.874,479.438 615.45,479.438ZM592.788,377.006C602.141,375.874 612.572,372.479 624.082,366.819C635.593,361.16 646.654,353.992 657.265,345.314C667.876,336.637 676.599,327.11 683.433,316.735C690.268,306.36 693.685,295.89 693.685,285.326C693.685,281.176 692.965,278.347 691.527,276.838C690.088,275.328 687.75,274.574 684.512,274.574C676.239,274.574 667.606,277.686 658.614,283.912C649.621,290.137 640.809,298.248 632.176,308.246C623.543,318.244 615.809,329.28 608.975,341.353C602.141,353.426 596.745,365.31 592.788,377.006Z" style="fill-rule:nonzero;stroke:#000;stroke-width:2.28px" transform="matrix(.43934 0 0 .43934 322.514 -46.847)"/>
 									<path d="M241.943 461.365c92.411 0 167.438 75.027 167.438 167.438 0 92.412-75.027 167.438-167.438 167.438-92.412 0-167.438-75.026-167.438-167.438 0-92.411 75.026-167.438 167.438-167.438Zm0 66.914c55.48 0 100.524 45.044 100.524 100.524 0 55.481-45.044 100.524-100.524 100.524-55.481 0-100.524-45.043-100.524-100.524 0-55.48 45.043-100.524 100.524-100.524Z" style="fill:#ec4899" transform="matrix(.2901 0 0 .2901 374.487 -53.793)"/>
 									<path d="M532.39 716.073V163.927h-90v642.146h419.142v-90H532.39Z" style="fill:#ec4899" transform="translate(386.14 -6.473) scale(.27952)"/>
@@ -48,7 +57,7 @@
 						</div>
 					</div>
 					
-					<div class="hidden md:flex md:items-center md:ms-4 space-x-8">
+					<div class="hidden lg:flex lg:items-center lg:ms-4 space-x-8">
 
 						<button type="button" x-on:click.prevent="document.getElementById('product').scrollIntoView({behavior: 'smooth'})"
 							class="inline-flex items-center 
@@ -94,7 +103,7 @@
 						</button>
 					</div>
 				
-					<div class="flex items-center md:hidden">
+					<div class="flex items-center lg:hidden">
 						<button type="button" x-on:click="aside = ! aside" 
 							class="text-slate-500 hover:text-slate-800
 								dark:text-white dark:hover:text-slate-300
@@ -148,11 +157,11 @@
 									<path d="M493.696 19H519v26.353h-25.304z" style="fill:#ec4899" transform="matrix(1 0 0 1.41741 16.1 -15.773)"/>
 								</svg>
 							</a>
-							<button x-on:click="aside = false">
+							<x-button-icon x-on:click="aside = false">
 								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
 									<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
 								</svg> 
-							</button>
+							</x-button-icon>
 						</div>
 
 						<nav class="py-6 h-full w-full flex flex-col flex-wrap overflow-y-auto no-scrollbar">
@@ -232,7 +241,7 @@
 							<h1
 								class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"
 							>
-								Crea tu composición de fotos personalizada
+								Composiciones de fotos personalizadas
 							</h1>
 							<p class="mt-4 text-xl text-gray-500">
 								Para decorar, regalar, exponer o recordar, con impresiones de calidad, y una instalación rápida y sencilla.
@@ -259,7 +268,7 @@
 													class="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100"
 												>
 													<img
-														src="./static/home-page-hero-image-tile-01.jpg"
+														src="./static/hero-tile-01.jpg"
 														alt=""
 														class="size-full object-cover"
 													/>
@@ -268,38 +277,7 @@
 													class="h-64 w-44 overflow-hidden rounded-lg"
 												>
 													<img
-														src="./static/home-page-hero-image-tile-02.jpg"
-														alt=""
-														class="size-full object-cover"
-													/>
-												</div>
-											</div>
-											<div
-												class="grid shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8"
-											>
-												<div
-													class="h-64 w-44 overflow-hidden rounded-lg"
-												>
-													<img
-														src="./static/home-page-hero-image-tile-03.jpg"
-														alt=""
-														class="size-full object-cover"
-													/>
-												</div>
-												<div
-													class="h-64 w-44 overflow-hidden rounded-lg"
-												>
-													<img
-														src="./static/home-page-hero-image-tile-04.jpg"
-														alt=""
-														class="size-full object-cover"
-													/>
-												</div>
-												<div
-													class="h-64 w-44 overflow-hidden rounded-lg"
-												>
-													<img
-														src="./static/home-page-hero-image-tile-05.jpg"
+														src="./static/hero-tile-02.jpg"
 														alt=""
 														class="size-full object-cover"
 													/>
@@ -312,7 +290,7 @@
 													class="h-64 w-44 overflow-hidden rounded-lg"
 												>
 													<img
-														src="./static/home-page-hero-image-tile-06.jpg"
+														src="./static/hero-tile-03.jpg"
 														alt=""
 														class="size-full object-cover"
 													/>
@@ -321,7 +299,38 @@
 													class="h-64 w-44 overflow-hidden rounded-lg"
 												>
 													<img
-														src="./static/home-page-hero-image-tile-07.jpg"
+														src="./static/hero-tile-04.jpg"
+														alt=""
+														class="size-full object-cover"
+													/>
+												</div>
+												<div
+													class="h-64 w-44 overflow-hidden rounded-lg"
+												>
+													<img
+														src="./static/hero-tile-05.jpg"
+														alt=""
+														class="size-full object-cover"
+													/>
+												</div>
+											</div>
+											<div
+												class="grid shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8"
+											>
+												<div
+													class="h-64 w-44 overflow-hidden rounded-lg"
+												>
+													<img
+														src="./static/hero-tile-06.jpg"
+														alt=""
+														class="size-full object-cover"
+													/>
+												</div>
+												<div
+													class="h-64 w-44 overflow-hidden rounded-lg"
+												>
+													<img
+														src="./static/hero-tile-07.jpg"
 														alt=""
 														class="size-full object-cover"
 													/>
@@ -358,7 +367,7 @@
 						</p>
 						<p class="mt-6 text-lg/8 text-gray-600">
 							Los fotomurales de Printole incluyen un sistema completo 
-							para una instalación precisa y sencilla de hermosas composiciones de fotografías
+							para una instalación rápida y sencilla de hermosas composiciones de fotografías
 						</p>
 					</div>
 					<div
@@ -447,9 +456,8 @@
 						Instalación rápida y sencilla
 					</h2>
 					<p class="mt-4 text-gray-700">
-						Los fotomurales de Printole se instalan con un sistema exclusivo, 
-						de modo que las imágenes quedan alineadas y se mantienen niveladas, 
-						y se pueden agregar, quitar o reorganizar los paneles.
+						Las composiciones de fotografías de Printole se instalan con un sistema exclusivo, 
+						de modo que las imágenes quedan alineadas y se mantienen niveladas.
 					</p>
 
 					<dl
@@ -690,8 +698,8 @@
 								</h3>
 								<p class="text-gray-500 dark:text-gray-400">
 									Por supuesto que sí. Ponte en contacto con nosotros a través del email 
-									<a href="mailto:info@printole.com" class="font-medium underline text-primary-600 dark:text-primary-500">
-										info@printole.com</a> y estaremos encantados de preparar un presupuesto para la composición que desees,
+									<a href="mailto:printole@icloud.com" class="font-medium underline text-primary-600 dark:text-primary-500">
+										printole@icloud.com</a> y estaremos encantados de preparar un presupuesto para la composición que desees,
 										sin importar el tamaño o número de paneles.
 								</p>
 							</div>
@@ -746,9 +754,9 @@
 					<span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 Printole. Todos los derechos reservados.
 					</span>
 					<div class="flex mt-4 sm:justify-center sm:mt-0">
-						<a href="mailto:info@printole.com" class="inline-flex items-center space-x-2 text-gray-500 hover:text-gray-900">
+						<a href="mailto:printole@icloud.com" class="inline-flex items-center space-x-2 text-gray-500 hover:text-gray-900">
 							<svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
-							<span class="-mt-0.5 text-sm">info@printole.com</span>
+							<span class="-mt-0.5 text-sm">printole@icloud.com</span>
 						</a>
 					</div>
 				</div>
