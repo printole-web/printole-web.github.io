@@ -56,7 +56,7 @@
 					
 					<div class="hidden lg:flex lg:items-center lg:ms-4 space-x-8">
 
-						<button type="button" x-on:click.prevent="document.getElementById('product').scrollIntoView({behavior: 'smooth'})"
+						<button type="button" x-on:click.prevent="goToProduct()"
 							class="inline-flex items-center 
 								font-semibold text-xs uppercase tracking-wide
 								text-slate-900 dark:text-white 
@@ -65,7 +65,7 @@
 							Nuestro producto
 						</button>
 
-						<button type="button" x-on:click.prevent="document.getElementById('install').scrollIntoView({behavior: 'smooth'})"
+						<button type="button" x-on:click.prevent="goToInstall()"
 							class="inline-flex items-center 
 								font-semibold text-xs uppercase tracking-wide
 								text-slate-900 dark:text-white 
@@ -74,7 +74,7 @@
 							Instalación
 						</button>
 
-						<button type="button" x-on:click.prevent="document.getElementById('models').scrollIntoView({behavior: 'smooth'})"
+						<button type="button" x-on:click.prevent="goToModels()"
 							class="inline-flex items-center 
 								font-semibold text-xs uppercase tracking-wide
 								text-slate-900 dark:text-white 
@@ -83,7 +83,7 @@
 							Modelos
 						</button>
 
-						<button type="button" x-on:click.prevent="document.getElementById('faqs').scrollIntoView({behavior: 'smooth'})"
+						<button type="button" x-on:click.prevent="goToFaqs()"
 							class="inline-flex items-center 
 								font-semibold text-xs uppercase tracking-wide
 								text-slate-900 dark:text-white 
@@ -92,7 +92,7 @@
 							Preguntas frecuentes
 						</button>
 
-						<button type="button" x-on:click.prevent="document.getElementById('store').scrollIntoView({behavior: 'smooth'})"
+						<button type="button" x-on:click.prevent="goToStore()"
                             class="flex items-center justify-center rounded-full 
 								font-semibold text-xs uppercase tracking-wide
 								bg-pink-500 text-white px-4 py-2">
@@ -165,7 +165,7 @@
 							<ul class="space-y-2">
 								<li>
 									<button type="button" 
-										x-on:click.prevent="aside = false, document.getElementById('product').scrollIntoView({behavior: 'smooth'})"
+										x-on:click.prevent="aside = false, goToProduct()"
 										class="w-full flex items-center space-x-3.5 
 											py-2 px-2.5 text-sm 
 											font-medium text-slate-700 dark:text-slate-400 dark:hover:text-slate-300
@@ -176,7 +176,7 @@
 								</li>
 								<li>
 									<button type="button" 
-										x-on:click.prevent="aside = false, document.getElementById('install').scrollIntoView({behavior: 'smooth'})"
+										x-on:click.prevent="aside = false, goToInstall()"
 										class="w-full flex items-center space-x-3.5 
 											py-2 px-2.5 text-sm 
 											font-medium text-slate-700 dark:text-slate-400 dark:hover:text-slate-300
@@ -187,7 +187,7 @@
 								</li>
 								<li>
 									<button type="button" 
-										x-on:click.prevent="aside = false, document.getElementById('models').scrollIntoView({behavior: 'smooth'})"
+										x-on:click.prevent="aside = false, goToModels()"
 										class="w-full flex items-center space-x-3.5 
 											py-2 px-2.5 text-sm 
 											font-medium text-slate-700 dark:text-slate-400 dark:hover:text-slate-300
@@ -198,7 +198,7 @@
 								</li>
 								<li>
 									<button type="button" 
-										x-on:click.prevent="aside = false, document.getElementById('faqs').scrollIntoView({behavior: 'smooth'})"
+										x-on:click.prevent="aside = false, goToFaqs()"
 										class="w-full flex items-center space-x-3.5 
 											py-2 px-2.5 text-sm 
 											font-medium text-slate-700 dark:text-slate-400 dark:hover:text-slate-300
@@ -209,7 +209,7 @@
 								</li>
 							</ul>
 							<div class="mt-6">
-								<button type="button" x-on:click.prevent="aside = false, document.getElementById('store').scrollIntoView({behavior: 'smooth'})"
+								<button type="button" x-on:click.prevent="aside = false, goToStore()"
 									class="flex items-center justify-center rounded-full 
 										font-semibold text-xs uppercase tracking-wide
 										bg-pink-500 text-white px-4 py-2">
@@ -337,7 +337,7 @@
 									</div>
 								</div>
 								
-								<button type="button" x-on:click.prevent="document.getElementById('models').scrollIntoView({behavior: 'smooth'})"
+								<button type="button" x-on:click.prevent="goToModels()"
 									class="inline-block rounded-full border border-transparent 
 										font-semibold text-xs uppercase tracking-wide
 										bg-pink-500 px-6 py-2 text-center text-white hover:bg-pink-600">
@@ -548,7 +548,7 @@
                                 <div class="mt-4 flex justify-between">
 									<div>
 										<h3 class="text-sm text-gray-700">
-											<button type="button" x-on:click.prevent="document.getElementById('store').scrollIntoView({behavior: 'smooth'})">
+											<button type="button" x-on:click.prevent="goToStore()">
 												<span
 													aria-hidden="true"
 													class="absolute inset-0"
@@ -574,7 +574,7 @@
                                 <div class="mt-4 flex justify-between">
 									<div>
 										<h3 class="text-sm text-gray-700">
-											<button type="button" x-on:click.prevent="document.getElementById('store').scrollIntoView({behavior: 'smooth'})">
+											<button type="button" x-on:click.prevent="goToStore()">
 												<span
 													aria-hidden="true"
 													class="absolute inset-0"
@@ -600,7 +600,7 @@
                                 <div class="mt-4 flex justify-between">
 									<div>
 										<h3 class="text-sm text-gray-700">
-											<button type="button" x-on:click.prevent="document.getElementById('store').scrollIntoView({behavior: 'smooth'})">
+											<button type="button" x-on:click.prevent="goToStore()">
 												<span
 													aria-hidden="true"
 													class="absolute inset-0"
@@ -769,19 +769,26 @@
 				drop-shadow-md bg-pink-500 hover:bg-pink-600 text-white text-xl font-semibold">&uarr;</button>
 
 		<script>
-			var toTopButton = document.getElementById("to-top-button");
 	
-			window.onscroll = function () {
-				if (document.body.scrollTop > 740 || document.documentElement.scrollTop > 740) {
-					toTopButton.classList.remove("hidden");
-				} else {
-					toTopButton.classList.add("hidden");
+	            function goToProduct() { document.getElementById('product').scrollIntoView({behavior: 'smooth'}); }
+	            function goToInstall() { document.getElementById('install').scrollIntoView({behavior: 'smooth'}); }
+	            function goToModels() { document.getElementById('models').scrollIntoView({behavior: 'smooth'}); }	
+	            function goToFaqs() { document.getElementById('faqs').scrollIntoView({behavior: 'smooth'}); }
+	            function goToStore() { document.getElementById('store').scrollIntoView({behavior: 'smooth'}); }
+		
+				var toTopButton = document.getElementById("to-top-button");
+	            
+				function goToTop() {
+					window.scrollTo({ top: 0, behavior: 'smooth' });
 				}
-			}
-	
-			function goToTop() {
-				window.scrollTo({ top: 0, behavior: 'smooth' });
-			}
+		
+	            window.onscroll = function () {
+	                if (document.body.scrollTop > 740 || document.documentElement.scrollTop > 740) {
+	                    toTopButton.classList.remove("hidden");
+	                } else {
+	                    toTopButton.classList.add("hidden");
+	                }
+	            }
 		</script>
 		
     </body>
