@@ -769,15 +769,19 @@
 				drop-shadow-md bg-pink-500 hover:bg-pink-600 text-white text-xl font-semibold">&uarr;</button>
 
 		<script>
-	
 	            function goToProduct() { document.getElementById('product').scrollIntoView({behavior: 'smooth'}); }
 	            function goToInstall() { document.getElementById('install').scrollIntoView({behavior: 'smooth'}); }
-	            function goToModels() { document.getElementById('models').scrollIntoView({behavior: 'smooth'}); }	
+	
+	            function goToModels() {
+	                const element = document.getElementById("models");
+	                element.scrollIntoView({behavior: 'smooth'});
+	            }
+	
 	            function goToFaqs() { document.getElementById('faqs').scrollIntoView({behavior: 'smooth'}); }
 	            function goToStore() { document.getElementById('store').scrollIntoView({behavior: 'smooth'}); }
 		
 				var toTopButton = document.getElementById("to-top-button");
-	            
+	
 				function goToTop() {
 					window.scrollTo({ top: 0, behavior: 'smooth' });
 				}
